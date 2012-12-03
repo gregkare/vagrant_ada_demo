@@ -53,3 +53,18 @@ The application is accessible locally in `./app`.
 Once on the VM, you can start GPS:
 
     gnat-gps&
+
+### Package a new box
+
+#### Start the server
+
+    vagrant up package
+
+#### Package the box
+
+    vagrant package --vagrantfile Vagrantfile --output ada_demo.box
+
+#### Add the box to your system
+
+    vagrant box add ada_demo ada_demo.box
+
