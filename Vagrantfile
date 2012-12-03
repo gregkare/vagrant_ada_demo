@@ -5,7 +5,7 @@ Vagrant::Config.run do |config|
   config.vm.customize ['modifyvm', :id, '--memory', '512', '--cpus', '2']
 
   config.vm.box     = 'precise32'
-  config.vm.box_url = "http://files.vagrantup.com/precise32.box"
+  config.vm.box_url = 'http://files.vagrantup.com/precise32.box'
 
   # This box is used to create the dev environment
   config.vm.define 'package' do |package_config|
