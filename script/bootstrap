@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -e
+
+# Install bundler if not present
+if ! gem which bundler 2>&1-; then
+  gem install bundler --no-rdoc --no-ri
+fi
+
+# Install Ruby dependencies
+bundle install --path vendor/gems --binstubs
+
+# Install Opscode Chef cookbooks
+./bin/librarian-chef install --verbose

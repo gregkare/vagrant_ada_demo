@@ -1,0 +1,16 @@
+.DS_Store
+*~
+.*.swp
+.*.swp
+.vagrant
+*.box
+*.deb
+app/
+vendor/gems/
+bin/
+.bundle/
+.chef/*.pem
+.chef/checksums/
+tmp/
+cookbooks/*
+apt-cache/*
