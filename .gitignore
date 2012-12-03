@@ -5,7 +5,6 @@
 .vagrant
 *.box
 *.deb
-app/
 vendor/gems/
 bin/
 .bundle/
