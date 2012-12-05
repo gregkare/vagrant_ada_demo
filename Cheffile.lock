@@ -7,6 +7,7 @@ SITE
       runit (>= 0.0.0)
       yum (>= 0.0.0)
     runit (0.15.0)
+    tmux (1.1.2)
     yum (0.8.0)
 
 PATH
@@ -21,4 +22,5 @@ DEPENDENCIES
   build-essential (>= 0)
   git (= 0.10.0)
   gnat (>= 0)
+  tmux (= 1.1.2)
 

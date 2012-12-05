@@ -15,7 +15,7 @@ Vagrant::Config.run do |config|
 
     package_config.vm.provision :chef_solo do |chef|
       chef.cookbooks_path = 'cookbooks'
-      chef.run_list       = %w(recipe[apt] recipe[git] recipe[gnat])
+      chef.run_list       = %w(recipe[apt] recipe[git] recipe[gnat] recipe[gnat::tmux])
     end
   end
 
@@ -26,7 +26,7 @@ Vagrant::Config.run do |config|
 
     dev_config.vm.provision :chef_solo do |chef|
       chef.cookbooks_path = 'cookbooks'
-      chef.run_list       = %w(recipe[git] recipe[gnat])
+      chef.run_list       = %w(recipe[git] recipe[gnat] recipe[gnat::tmux])
     end
   end
 end

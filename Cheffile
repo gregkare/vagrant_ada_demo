@@ -6,6 +6,7 @@ site 'http://community.opscode.com/api/v1'
 cookbook 'apt',                 '1.5.0'
 cookbook 'build-essential'
 cookbook 'git',                 '0.10.0'
+cookbook 'tmux',                '1.1.2'
 
 # Our own cookbooks
 cookbook 'gnat', :path => 'vendor/cookbooks/gnat'
